@@ -1,5 +1,7 @@
 import pic from "../images/user_pic.png"
-    const soulsExample = [];
+import { ISoul } from "../models";
+
+    const soulsExample: ISoul[] = [];
     for(let i = 0; i < 54; i++) {
         soulsExample.push({
             name: "Zero Corruption",

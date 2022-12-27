@@ -60,7 +60,7 @@ export default function Home() {
             </div>
           </div>
           <div className="soulsList">
-            <SoulsList soulsList={soulsExample} page={pageCount}/>
+            <SoulsList soulsList={soulsExample} key='soulsList' page={pageCount}/>
             <ListFooter page={pageCount} numOfSouls={soulsExample.length - 1} nextPage={nextPage} prevPage={prevPage} />
         </div>
       </div>

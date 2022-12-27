@@ -1,0 +1,104 @@
+.soulsList {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 9px;
+    padding-right: 44px;
+  }
+  
+  .listHead {
+    display: flex;
+    height: 75px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+  }
+  #name {
+    padding: 65px;
+  }
+  .col-1 {
+    width: 76px;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+  }
+  .col-2 {
+    width: 290px;
+    display: flex;
+  }
+  .col-3 {
+    width: 22%;
+    display: flex;
+  
+  }
+  .col-4 {
+    width: 14%;
+    display: flex;
+  
+  }
+  .col-5 {
+    width: 20%;
+    display: flex;
+  
+  }
+  .col-6 {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    margin-left: auto;
+    width: 133px;
+  }
+  .soulRow {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    font-style: normal;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+  
+    box-shadow:  0px 2px 4px -2px rgba(16, 24, 40, 0.1);
+    border-radius: 5px;
+    letter-spacing: -0.02em;
+  font-feature-settings: 'salt' on;
+  }
+  
+  .soul-info {
+    display: flex;
+    align-items: center;
+  }
+  .name-addr {
+    padding: 14px;
+  }
+  .address {
+    font-size: 11px;
+    color: #4E4747;
+    line-height: 17px;
+  }
+  
+  .view-button {
+    width: 104.6px;
+    height: 31px;
+    border: 1px solid #58CEA1;
+    border-radius: 5px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'salt' on;
+    background: none;
+    color: #58CEA0;
+    margin-right: 28px;
+  }
+  
+  .view-button:hover {
+    cursor: pointer;
+  }

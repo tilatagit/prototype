@@ -1,0 +1,105 @@
+.listHeader {
+    background: #ffffff;
+    box-shadow: 0px -3px 6px -1px rgba(16, 24, 40, 0.1);
+      width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 84px;
+    width: 100%;
+    padding-left: 47px;
+    padding-right: 40px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    font-feature-settings: "salt" on;
+    color: #0a0a0a;
+  }
+  .listHeader div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .listHeader form {
+    width: 100%;
+    padding-left: 66px;
+  }
+  .listHeader form input {
+    height: 34px;
+    width: 100%;
+    border: 1px solid #ababab;
+    border-radius: 3px;
+    background: #ffffff url(../../images/search-icon-png-9982.png) no-repeat left;
+    background-size: 15px;
+    background-position: 20px 8px;
+    padding-left: 50px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .searchBlock {
+    width: 50%;
+  }
+  
+  .listHeader select {
+    display: flex;
+    padding-left: 18px;
+    padding-right: 18px;
+    width: auto;
+    height: 41px;
+    background: #ffffff;
+    border: 0.5px solid #cbd5e1;
+    border-radius: 5px;
+    gap: 6px;
+    -webkit-appearance: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    background: #ffffff url(../../images/arrow1.svg) no-repeat right;
+    background-position: 75px;
+  }
+  
+  .selectorBlock {
+    width: 232px;
+    margin-left: 25px;
+  }
+  #Metrics {
+    width: 107px;
+  }
+  
+  .buttonBlock {
+    margin-left: 55px;
+  }
+  
+  .buttonBlock button {
+    width: 121px;
+    height: 50px;
+    margin-top: 8px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    font-feature-settings: 'salt' on;
+  }
+  
+  #apply {
+    background: #171717;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+    color: #CBDED6;
+  }
+  
+  #clear {
+    background: none;
+    border: none;
+    color: #58CEA0;
+  }

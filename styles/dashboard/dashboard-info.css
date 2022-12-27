@@ -1,0 +1,28 @@
+.dashboardInfo {
+    height: 298px;
+    padding-left: 69px;
+    padding-top: 28px;
+    font-family: "Helvetica";
+    color: #58cea1;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  
+  .cummunitiesCounter {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: #1d1d1d;
+    font-family: Roboto-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  
+  .cummunitiesCounter p {
+    padding-left: 14px;
+  }
