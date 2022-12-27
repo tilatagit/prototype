@@ -29,8 +29,8 @@ export default function SoulsSoulsList({ soulsList, page }: ISSlistProps) {
           {soul.positive ? soul.positive.toLocaleString() : 0}
         </div>
         <div className="souls-col-4">{soul.negative}</div>
-        <div className="souls-col-6">{"+" + soul.upvotes}</div>
-        <div className="souls-col-6">{"-" + soul.downvotes}</div>
+        <div className="souls-col-6" id="upvote">{"+" + soul.upvotes}</div>
+        <div className="souls-col-6" id="downvote">{"-" + soul.downvotes}</div>
         <div className="souls-col-7">
           <button className="view-button">upvote</button>
         </div>

@@ -65,3 +65,11 @@
     letter-spacing: -0.02em;
   font-feature-settings: 'salt' on;
 }
+
+#upvote {
+    color: #05B5A1;
+}
+
+#downvote {
+    color: #E8475F;
+}

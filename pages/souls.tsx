@@ -15,7 +15,7 @@ export default function Souls() {
   const [pageCount, setPageCount] = useState(1);
 
   function nextPage() {
-    if (pageCount <= Math.floor(soulsExample.length / 10))
+    if (pageCount < Math.floor(soulsExample.length / 10) || (pageCount === Math.floor(soulsExample.length / 10)) && (soulsExample.length % 10))
       setPageCount(pageCount + 1);
   }
   function prevPage() {
@@ -51,10 +51,10 @@ export default function Souls() {
         <SoulsSoulsList soulsList={soulsExample} page={pageCount} />
       </div>
         <ListFooter page={pageCount}
-              numOfSouls={soulsExample.length - 1}
+              numOfSouls={soulsExample.length}
               nextPage={nextPage}
               prevPage={prevPage}/>
-              
+
     </MainContainer>
   );
 }
