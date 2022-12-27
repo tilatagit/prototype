@@ -9,7 +9,12 @@ import { ISoul } from "../models";
             img: pic,
             totalAum: 10000 + i,
             members: 2451 + i,
-            diversity: 24000 + i
+            diversity: 24000 + i,
+            cases: 200 + i,
+            positive: 180 + i,
+            negative: 20 + i,
+            upvotes: 2451 + i,
+            downvotes: 20 + i,
         })
     } 
 

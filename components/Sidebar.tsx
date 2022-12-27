@@ -16,9 +16,9 @@ export default function Sidebar() {
           <Image className="icon" src={logo} alt="" width={34} height={35} />{" "}
           Tilata
         </div>
-        <button className="connectButton">Connect Wallet</button>
+        <button className="createCaseButton">Create Case</button>
         <div className="navigation">
-          <Link href="" className="navLinks">
+          <Link href="/" className="navLinks">
             <Image className="icon" src={icon1} alt="" width={16} height={16} />
             Dashboard
           </Link>
@@ -34,7 +34,7 @@ export default function Sidebar() {
             Modules
           </Link>
 
-          <Link href="" className="navLinks">
+          <Link href="/souls" className="navLinks">
             <Image className="icon" src={icon4} alt="" width={16} height={16} />
             Souls
           </Link>

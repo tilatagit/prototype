@@ -1,0 +1,101 @@
+.souls-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 78px;
+    width: 100%;
+    height: 144px;
+}
+
+.souls-counter {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter
+}
+.souls-counter h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 20px;
+    color: #58CEA1;
+}
+.souls-counter p {
+    margin-top: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4E4747;
+}
+
+.buttons-container {
+    display: flex;
+    margin-right: 13px;
+    align-items: center;
+    font-family: Inter;
+}
+
+.buttons-container select {
+    display: flex;
+    padding-left: 18px;
+    padding-right: 18px;
+    width: auto;
+    height: 41px;
+    background: #ffffff;
+    border: 0.5px solid #cbd5e1;
+    border-radius: 5px;
+    gap: 6px;
+    -webkit-appearance: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    background: #ffffff url(../../images/arrow1.svg) no-repeat right;
+    background-position: 75px;
+}
+
+.buttons-container p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 39px;
+    margin-right: 14px;
+}
+
+.invite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 104px;
+    height: 40px;
+    left: 704px;
+    top: 137px;
+    background: #58CEA1;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'salt' on;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.buttons-container button {
+    width: 121px;
+    height: 41px;
+}
+.buttons-container button:hover {
+    cursor: pointer;
+}
+.filter-buttons {
+    margin-left: 43px;
+    display: flex;
+}
+.selectors {
+    display: flex;
+    justify-content: space-between;
+    width: 223px;
+}

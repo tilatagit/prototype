@@ -1,0 +1,67 @@
+.souls-souls-list {
+    margin-left: 66px;
+    margin-right: 61px;
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 28px;
+    justify-content: space-between;
+}
+
+.souls-list-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.souls-col-1 {
+    width: 336px;
+    padding-left: 35px;
+}
+.souls-col-2 {
+    width: 104px;
+    display: flex;
+    justify-content: left;
+}
+.souls-col-3 {
+    width: 104px;
+}
+.souls-col-4 {
+    width: 214px;
+}
+.souls-col-5 {
+    width: 105px;
+}
+.souls-col-6 {
+    width: 105px;
+}
+.souls-col-7 {
+    width: 122px;
+}
+
+
+#soul-name {
+    display: flex;
+    justify-content: center;
+}
+
+.souls-souls-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    height: 64px;
+    font-style: normal;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    align-items: center;
+    box-shadow:  0px 2px 4px -2px rgba(16, 24, 40, 0.1);
+    border-radius: 5px;
+    letter-spacing: -0.02em;
+  font-feature-settings: 'salt' on;
+}

@@ -21,7 +21,7 @@ export default function ListFooter({ page, numOfSouls, nextPage, prevPage }: Lis
         <div>Results: {getListInfo(numOfSouls, page)}</div> 
         <div className="page-nav">
             <button onClick={() => prevPage()}><Image src={left} alt="" width={20} height={10} /> </button>
-            <div>Page {page} of {numOfSouls % 10 ? Math.floor(numOfSouls/10) + 1 : Math.floor(numOfSouls/10)}</div>
+            <div className="page-info">Page {page} of {numOfSouls % 10 ? Math.floor(numOfSouls/10) + 1 : Math.floor(numOfSouls/10)}</div>
             <button onClick={() => nextPage()}><Image src={right} alt="" width={20} height={10} /> </button>
         </div>
       </div>

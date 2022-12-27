@@ -6,5 +6,10 @@ export interface ISoul {
     img?: any,
     totalAum?: number,
     members?: number,
-    diversity?: number
+    diversity?: number,
+    cases?: number,
+    positive?: number,
+    negative?: number,
+    upvotes?: number,
+    downvotes?: number
 }

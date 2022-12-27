@@ -4,6 +4,9 @@ import '../styles/header.css'
 import '../styles/dashboard/dashboard-info.css'
 import '../styles/dashboard/list-header.css'
 import '../styles/dashboard/souls-list.css'
+import '../styles/list-footer.css'
+import "../styles/souls/souls-header.css"
+import "../styles/souls/souls-souls-list.css"
 import type { AppProps } from 'next/app'
 
 

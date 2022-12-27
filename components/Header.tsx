@@ -14,7 +14,7 @@ export default function Header() {
             placeholder="Search..."
           />
         </form>
-        <button className="createCaseButton">Create Case</button>
+        <button className="connectButton">Connect Wallet</button>
       </div>
     </>
   );

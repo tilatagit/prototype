@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    padding-left: 40px;
+    padding-right: 20px;
+    height: 56px;
+    align-items: center;
+    }
+  .page-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .page-nav button {
+    border: none;
+    background: none;
+  }
+  .page-nav button:hover {
+    cursor: pointer;
+  }
+  .page-info {
+    padding-left: 15px;
+    padding-right: 15px;
+  }

@@ -43,7 +43,7 @@ a:active {
 
 
 
-.dashboardPage {
+.main-content {
   display: flex;
   flex-direction: column;
   margin-left: 207px;
@@ -55,11 +55,3 @@ a:active {
 
 
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-}
-.page-nav {
-  display: flex;
-  justify-content: center;
-}

@@ -7,26 +7,25 @@ import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
 import icon7 from "../images/Icon7.png";
 import React, { useState } from "react";
-import SoulsList from "../components/SoulsList";
+import DashboardSoulsList from "../components/DashboardSoulsList";
 import soulsExample from "../components/example";
 import ListFooter from "../components/ListFooter";
+import MainContainer from "../components/MainContainer";
 
 export default function Home() {
   const [activityCount, setActivityCount] = useState(40000);
   const [pageCount, setPageCount] = useState(1);
 
   function nextPage() {
-    if(pageCount <= Math.floor(soulsExample.length/10))setPageCount(pageCount + 1);
+    if (pageCount <= Math.floor(soulsExample.length / 10))
+      setPageCount(pageCount + 1);
   }
   function prevPage() {
-    if(pageCount > 1) setPageCount(pageCount - 1)
+    if (pageCount > 1) setPageCount(pageCount - 1);
   }
 
   return (
-    <>
-      <Sidebar />
-      <Header />
-      <div className="dashboardPage">
+    <MainContainer>
         <div className="dashboardInfo">
           Active Communities
           <div className="cummunitiesCounter">
@@ -35,35 +34,42 @@ export default function Home() {
           </div>
         </div>
 
-        
-          <div className="listHeader">
-            <div className="searchBlock">
+        <div className="listHeader">
+          <div className="searchBlock">
             DeSocs
             <form action="" id="">
-              <input type="text" placeholder="Search..."/>
+              <input type="text" placeholder="Search..." />
             </form>
-            </div>
-            <div className="selectorBlock">
-              <select name="Score" id="Score">
-                <option value={0}>Score</option>
-                <option value="Increase">Increase</option>
-                <option value="Decrease">Decrease</option>
-              </select>
-              <select name="Metrics" id="Metrics">
-                <option value="1">Metrics</option>
-                <option value="2"></option>
-              </select>
-            </div>
-            <div className="buttonBlock">
+          </div>
+          <div className="selectorBlock">
+            <select name="Score" id="Score">
+              <option value={0}>Score</option>
+              <option value="Increase">Increase</option>
+              <option value="Decrease">Decrease</option>
+            </select>
+            <select name="Metrics" id="Metrics">
+              <option value="1">Metrics</option>
+              <option value="2"></option>
+            </select>
+          </div>
+          <div className="buttonBlock">
               <button id="apply">Apply filter</button>
               <button id="clear">Clear filter</button>
-            </div>
           </div>
-          <div className="soulsList">
-            <SoulsList soulsList={soulsExample} key='soulsList' page={pageCount}/>
-            <ListFooter page={pageCount} numOfSouls={soulsExample.length - 1} nextPage={nextPage} prevPage={prevPage} />
         </div>
-      </div>
-    </>
+        <div className="soulsList">
+          <DashboardSoulsList
+            soulsList={soulsExample}
+            key="soulsList"
+            page={pageCount}
+          />
+          <ListFooter
+            page={pageCount}
+            numOfSouls={soulsExample.length - 1}
+            nextPage={nextPage}
+            prevPage={prevPage}
+          />
+        </div>
+    </MainContainer>
   );
 }
