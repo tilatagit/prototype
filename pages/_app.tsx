@@ -7,6 +7,8 @@ import '../styles/dashboard/souls-list.css'
 import '../styles/list-footer.css'
 import "../styles/souls/souls-header.css"
 import "../styles/souls/souls-souls-list.css"
+import "../styles/modules/modules.css"
+import "../styles/jurisdictions/jurisdictions.css"
 import type { AppProps } from 'next/app'
 
 

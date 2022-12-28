@@ -8,7 +8,7 @@ import Header from "../components/Header";
 import icon7 from "../images/Icon7.png";
 import React, { useState } from "react";
 import DashboardSoulsList from "../components/DashboardSoulsList";
-import soulsExample from "../components/example";
+import {soulsExample} from "../components/example";
 import ListFooter from "../components/ListFooter";
 import MainContainer from "../components/MainContainer";
 
@@ -25,7 +25,7 @@ export default function Home() {
   }
 
   return (
-    <MainContainer>
+    <MainContainer activePage={"dashboard"}>
         <div className="dashboardInfo">
           Active Communities
           <div className="cummunitiesCounter">
@@ -37,7 +37,7 @@ export default function Home() {
         <div className="listHeader">
           <div className="searchBlock">
             DeSocs
-            <form action="" id="">
+            <form action="" id="" className="dashnoard-search">
               <input type="text" placeholder="Search..." />
             </form>
           </div>

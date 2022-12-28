@@ -4,7 +4,7 @@ import MainContainer from "../components/MainContainer";
 import { useState } from "react";
 import nFormatter from "../components/utils/nFormater";
 import SoulsSoulsList from "../components/SoulsSoulsList";
-import soulsExample from "../components/example";
+import {soulsExample} from "../components/example";
 import { ISoul } from "../models";
 import ListFooter from "../components/ListFooter";
 
@@ -23,7 +23,7 @@ export default function Souls() {
   }
 
   return (
-    <MainContainer>
+    <MainContainer activePage="dashboard">
       <div className="souls-page-header">
         <div className="souls-counter">
           <h1>Souls</h1>

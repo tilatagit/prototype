@@ -8,28 +8,32 @@ import icon4 from "../images/Icon4.png";
 import icon5 from "../images/Icon5.png";
 import icon6 from "../images/Icon6.png";
 
-export default function Sidebar() {
+interface ISidebarProps {
+  activePage: string;
+}
+
+export default function Sidebar({activePage}: ISidebarProps) {
   return (
     <>
       <div className="sidebar">
         <div className="logo">
-          <Image className="icon" src={logo} alt="" width={34} height={35} />{" "}
+          <Image className="icon" src={logo} alt="" width={34} height={35} />
           Tilata
         </div>
         <button className="createCaseButton">Create Case</button>
         <div className="navigation">
-          <Link href="/" className="navLinks">
+          <Link href="/" className="navLinks" id={activePage === 'dashboard' ? 'active-page' : ""}>
             <Image className="icon" src={icon1} alt="" width={16} height={16} />
             Dashboard
           </Link>
 
-          <Link href="" className="navLinks">
+          <Link href="/jurisdictions" className="navLinks">
             {" "}
             <Image className="icon" src={icon2} alt="" width={16} height={16} />
             Jurisdictions
           </Link>
 
-          <Link href="" className="navLinks">
+          <Link href="/modules" className="navLinks">
             <Image className="icon" src={icon3} alt="" width={16} height={16} />
             Modules
           </Link>

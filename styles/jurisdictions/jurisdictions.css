@@ -1,0 +1,204 @@
+.jurisdiction-card {
+    display: flex;
+    flex-direction: column;
+    height: 369px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #FDFDFD;
+    margin: 45px;
+    padding-left: 66px;
+    padding-right: 45px;
+    padding-top: 12px; 
+    font-family: Inter;
+}
+
+.jurisdiction-main-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+
+}
+
+.jurisdiction-description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 94px;
+}
+.jurisdiction-description h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 20px;
+}
+.jurisdiction-description p {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #8A7C7C;
+}
+.jurisdiction-description button {
+    width: 121px;
+    height: 40px;
+    background: #58CEA0;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 26px;
+}
+.left-side-box{
+    display: flex;
+}
+
+.address-box {
+    display: flex;
+    align-items: center;
+    height: max-content;
+    padding-top: 35px;
+}
+
+.copy {
+    background:#FDFDFD url(../../images/copy.png) no-repeat left;
+    background-size: 14px 17px;
+    width: 16px;
+    height: 17px;
+    border: none;
+    margin-right: 7px;
+}
+.copy:hover {
+    cursor: pointer;
+}
+
+.link-to-scan {
+    background:#FDFDFD url(../../images/link-to-scan.png) no-repeat left;
+    background-size: 17px;
+    width: 17px;
+    height: 17px;
+    border: none;
+}
+.link-to-scan:hover {
+    cursor: pointer;
+}
+
+.address-box p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    /* identical to box height, or 106% */
+
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+    color: #58CEA0;
+}
+
+.jurisdiction-metrics {
+    display: flex;
+    margin-top: 38px;
+    justify-content: space-between;
+}
+.jurisdiction-main-metrics {
+    display: flex;
+}
+.jurisdictions-metrics-columns {
+    display: flex;
+    flex-direction: column;
+    width: 104px;
+}
+
+.jurisdictions-metrics-columns h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 28px;
+    /* identical to box height, or 165% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'salt' on;
+}
+
+.jurisdictions-metrics-columns p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    /* identical to box height, or 165% */
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'salt' on;
+}
+
+.jurisdictions-votes {
+    display: flex;
+}
+
+.jurisdictions-nav-bar {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    /* identical to box height, or 165% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+}
+
+.jurisdictions-nav-bar ul {
+    list-style: none;
+    margin-left: 23px;
+}
+.jurisdictions-nav-bar li {
+    display: inline-block;
+    padding: 20px 0 20px;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 8px;
+    margin-left: 28px;
+}
+
+.jurisdictions-nav-bar li:hover, #active-button, .jurisdictions-nav-bar li:focus{
+    border-bottom: 3px solid #000000;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.jurisdiction-search {
+    padding-left: 0;
+    width: 100%;
+    margin-right: 42px;
+}
+
+.jurisdiction-sort {
+    display: flex;
+    width: 49px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* or 121% */
+
+
+color: #000000;
+}
+
+
+
