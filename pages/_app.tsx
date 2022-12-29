@@ -9,9 +9,13 @@ import "../styles/souls/souls-header.css"
 import "../styles/souls/souls-souls-list.css"
 import "../styles/modules/modules.css"
 import "../styles/jurisdictions/jurisdictions.css"
+import "../styles/profile/profile.css"
+import "../styles/modal.css"
 import type { AppProps } from 'next/app'
+import { useState } from 'react'
 
 
 export default function App({ Component, pageProps }: AppProps) {
+
   return <Component {...pageProps} />
 }

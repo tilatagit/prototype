@@ -1,0 +1,80 @@
+.no-cases {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+    margin-top: 120px;
+    align-items: center;
+}
+
+.no-cases p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    /* identical to box height, or 165% */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+}
+
+.no-cases button {
+    width: 163px;
+    height: 40px;
+    background: #58cea0 url(../../images/plus.png) no-repeat left;
+    background-size: 23px;
+    background-position: 12px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 30px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    /* or 111% */
+    padding-right: 14px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+    font-feature-settings: 'salt' on;
+    color: #ffffff;
+}
+
+.no-cases button:hover {
+    cursor: pointer;
+}
+
+.profile-links button {
+    width: 24px;
+    height: 24px; 
+    margin-right: 20px;
+    margin-top: 17px;
+}
+.profile-links button:hover {
+    cursor: pointer;
+}
+
+#facebook {
+    background: #FDFDFD url(../../images/fb.png) no-repeat left;
+    background-size: 24px;
+}
+
+#linkedin {
+    background: #FDFDFD url(../../images/in.png) no-repeat left;
+    background-size: 24px;
+}
+
+#twitter {
+    background: #FDFDFD url(../../images/twitter.png) no-repeat left;
+    background-size: 24px;   
+}
+
+#github {
+    background: #FDFDFD url(../../images/github.png) no-repeat left;
+    background-size: 24px;   
+}
+
+#profile-follow {
+    margin-top: 17px;
+}

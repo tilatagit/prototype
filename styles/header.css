@@ -46,3 +46,19 @@
     cursor: pointer;
   }
   
+  .connectedButton {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+    background: #000000;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+  }

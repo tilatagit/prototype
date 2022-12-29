@@ -1,15 +1,14 @@
-import JurisdictionCard from "../components/JurisdictionCard";
 import MainContainer from "../components/MainContainer";
-import { jurisdictionExample } from "../components/example";
+import ProfileCard from "../components/ProfileCard";
+import {profileExample} from "../components/example"
 import { useState } from "react";
 
-export default function Jurisdictions() {
-    const isActive = false
+export default function Profile() {
     const [menuPage, setMenuPage] = useState("cases")
-  return (
-    <MainContainer activePage="jurisdictions">
-      <JurisdictionCard jurisdiction={jurisdictionExample} />
-      <div className="jurisdictions-nav-bar">
+    return (
+        <MainContainer activePage="profile">
+            <ProfileCard profile={profileExample}/>
+            <div className="jurisdictions-nav-bar">
         <ul>
           <li id={menuPage === 'cases' ? "active-button" : ""} onClick={() => setMenuPage('cases')}>Cases</li>
           <li id={menuPage === 'officians' ? "active-button" : ""} onClick={() => setMenuPage('officians')}>Officians</li>
@@ -42,6 +41,7 @@ export default function Jurisdictions() {
               <button id="clear">Clear filter</button>
           </div>
         </div>
-    </MainContainer>
-  );
+        {!profileExample.soul.cases && <div className="no-cases"><p>You currently no cases</p><button>Create case</button></div>}
+        </MainContainer>
+    )
 }

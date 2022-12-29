@@ -73,7 +73,7 @@
     font-size: 16px;
   }
   
-  .navLinks:hover, #active-page {
+  .navLinks:hover, .active-page {
     border: 1px solid #7aedc1;
     border-radius: 10px;
   }

@@ -13,7 +13,7 @@ export default function JurisdictionCard({
     <div className="jurisdiction-card">
       <div className="jurisdiction-main-info">
         <div className="left-side-box">
-          <Image src={jurisdiction.img} alt="" width={189} height={189} />
+          <Image className="card-avatar" src={jurisdiction.img} alt="" width={189} height={189} />
           <div className="jurisdiction-description">
             <h1>{jurisdiction.name} Jurisdiction</h1>
             <p>{jurisdiction.slogan && jurisdiction.slogan}</p>
@@ -55,11 +55,11 @@ export default function JurisdictionCard({
       </div>
       <div className="jurisdictions-votes">
       <div className="jurisdictions-metrics-columns">
-            <h2>Negative</h2>
+            <h2>Upvotes</h2>
             <p id="upvote">{"+" + nFormater(jurisdiction.upvotes)}</p>
         </div>
         <div className="jurisdictions-metrics-columns">
-            <h2>Denied</h2>
+            <h2>Downvotes</h2>
             <p id="downvote">{"-" + nFormater(jurisdiction.downvotes)}</p>
         </div>
       </div></div>

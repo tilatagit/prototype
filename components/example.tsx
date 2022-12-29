@@ -1,12 +1,24 @@
 import pic from "../images/user_pic.png"
 import AntiScam from "../images/AntiScam.png"
-import { IJurisdiction, IModule, ISoul } from "../models";
+import { IJurisdiction, IModule, ISoul, ISoulProfile } from "../models";
 
-    const soulsExample: ISoul[] = [];
-    for(let i = 0; i < 25; i++) {
+    const soulsExample: ISoul[] = [{
+        name: "Zero Corr" ,
+        address: "0xc631A4fd3bC7b7B14159C8976276f75BCEAe054a",
+        img: pic,
+        totalAum: 10000 ,
+        members: 2451 ,
+        diversity: 24000 ,
+        cases: 200 ,
+        positive: 180 ,
+        negative: 20 ,
+        upvotes: 2451 ,
+        downvotes: 20 ,
+    }];
+    for(let i = 1; i <= 2; i++) {
         soulsExample.push({
             name: "Zero Corruption " + i,
-            address: "0xc631A4fd3bC7b7B14159C8976276f75BCEAe054a",
+            address: "0xc331A4fd3bC7b7B14159C8976276f75BCEAe054a",
             img: pic,
             totalAum: 10000 + i,
             members: 2451 + i,
@@ -41,6 +53,19 @@ import { IJurisdiction, IModule, ISoul } from "../models";
         downvotes: 1200,
         cases: [{q:1},{q:2},{q:3}]
     }
+
+
+    export const profileExample: ISoulProfile = {
+        soul: soulsExample[0],
+        description: "Designer | Developer",
+        links: {
+            facebook: "2",
+            linkedin: "3",
+            twitter: "4",
+            github: "5"
+        }
+    }
+    profileExample.soul.cases = 0;
 
     
 export {soulsExample, moduleExample, jurisdictionExample};

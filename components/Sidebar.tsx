@@ -22,28 +22,28 @@ export default function Sidebar({activePage}: ISidebarProps) {
         </div>
         <button className="createCaseButton">Create Case</button>
         <div className="navigation">
-          <Link href="/" className="navLinks" id={activePage === 'dashboard' ? 'active-page' : ""}>
+          <Link href="/" className={activePage === 'dashboard' ? 'navLinks active-page' : "navLinks"}>
             <Image className="icon" src={icon1} alt="" width={16} height={16} />
             Dashboard
           </Link>
 
-          <Link href="/jurisdictions" className="navLinks">
+          <Link href="/jurisdictions" className={activePage === 'jurisdictions' ? 'navLinks active-page' : "navLinks"}>
             {" "}
             <Image className="icon" src={icon2} alt="" width={16} height={16} />
             Jurisdictions
           </Link>
 
-          <Link href="/modules" className="navLinks">
+          <Link href="/modules" className={activePage === 'modules' ? 'navLinks active-page' : "navLinks"}>
             <Image className="icon" src={icon3} alt="" width={16} height={16} />
             Modules
           </Link>
 
-          <Link href="/souls" className="navLinks">
+          <Link href="/souls" className={activePage === 'souls' ? 'navLinks active-page' : "navLinks"}>
             <Image className="icon" src={icon4} alt="" width={16} height={16} />
             Souls
           </Link>
 
-          <Link href="" className="navLinks">
+          <Link href="/profile" className={activePage === 'profile' ? 'navLinks active-page' : "navLinks"}>
             <Image className="icon" src={icon5} alt="" width={16} height={16} />
             Profile
           </Link>

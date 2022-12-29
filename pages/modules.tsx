@@ -4,7 +4,7 @@ import ModulesRender from "../components/ModulesRender";
 
 export default function Modules() {
     return(<>
-        <MainContainer>
+        <MainContainer activePage="modules">
             <div className="modules">
                 <h1>Launchpad</h1>
                 <ModulesRender modulesList={moduleExample} />

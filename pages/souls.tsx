@@ -23,7 +23,7 @@ export default function Souls() {
   }
 
   return (
-    <MainContainer activePage="dashboard">
+    <MainContainer activePage="souls">
       <div className="souls-page-header">
         <div className="souls-counter">
           <h1>Souls</h1>
