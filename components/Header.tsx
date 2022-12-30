@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Modal from "./wallets/Modal";
 import { soulsExample } from "./example";
+import AppContext from "./AppContexst";
 
 interface IHeader {
   setAccount: Function;
@@ -10,19 +11,20 @@ interface IHeader {
   account: string[];
 }
 
-export default function Header({ setAccount, setProvider, account }: IHeader) {
+export default function Header({ setAccount, setProvider }: IHeader) {
+  const context = useContext(AppContext)
   const [modalActive, setModalActive] = useState(false);
   const accountInfo = (address: string) => {
     const acc = soulsExample.find(
-      (soul) => soul.address.toLocaleLowerCase() === address
+      (soul) => soul.address.toLocaleLowerCase() === address.toLocaleLowerCase()
     );
     if (acc) {
       return (
         <div className="connectedButton">
-          <Image src={acc.img} alt="" width={35} height={32} />
-          <div>
-            <p>{acc.name}</p>
-            <p>
+          <Image className="avatar" src={acc.img} alt="" width={35} height={32} />
+          <div className="connected-info">
+            <p id="connected-name">{acc.name}</p>
+            <p id="connected-address">
               {acc.address.slice(0, 6) +
                 "..." +
                 acc.address.slice(acc.address.length - 5)}
@@ -31,7 +33,8 @@ export default function Header({ setAccount, setProvider, account }: IHeader) {
         </div>
       );
     } else {
-      return <div className="connectedButton">{address}</div>;
+      return <div className="connectedButton no-account" ><p id="connected-address">{address.slice(0, 6) +
+        "..." +address.slice(address.length - 5)}</p></div>;
     }
   };
 
@@ -47,7 +50,7 @@ export default function Header({ setAccount, setProvider, account }: IHeader) {
             placeholder="Search..."
           />
         </form>
-        {!account ? (
+        {!context.account ? (
           <button
             className="connectButton"
             onClick={() => setModalActive(true)}
@@ -55,14 +58,12 @@ export default function Header({ setAccount, setProvider, account }: IHeader) {
             Connect Wallet
           </button>
         ) : (
-          <div >{accountInfo(account[0])}</div>
+          <div >{accountInfo(context.account[0])}</div>
         )}
       </div>
       <Modal
         active={modalActive}
         setActive={setModalActive}
-        setAccount={setAccount}
-        setProvider={setProvider}
       />
     </>
   );

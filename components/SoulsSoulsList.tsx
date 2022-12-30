@@ -7,7 +7,7 @@ interface ISSlistProps {
 }
 
 export default function SoulsSoulsList({ soulsList, page }: ISSlistProps) {
-  const pageList = soulsList.slice(1 + (page - 1) * 10, 11 + (page - 1) * 10);
+  const pageList = soulsList.slice( (page - 1) * 10, 10 + (page - 1) * 10);
   const list = pageList.map((soul, i) => {
     return (
       <div className="souls-souls-row">

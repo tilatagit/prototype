@@ -58,7 +58,36 @@
     border-radius: 4px;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content:left;
     align-items: center;
     padding: 8px;
+    padding-left: 11px;
+  }
+
+  .connected-info {
+    margin-left: 17px;
+  }
+
+  #connected-name {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  #connected-address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.09em;
+    margin-top: 2px;
+  }
+
+  .no-account {
+    display: flex;
+    justify-content: center;
+  }
+
+  .avatar {
+    border-radius: 50%;
   }

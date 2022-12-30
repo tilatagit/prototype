@@ -1,4 +1,5 @@
 import pic from "../images/user_pic.png"
+import pic2 from "../images/user_pic2.png"
 import AntiScam from "../images/AntiScam.png"
 import { IJurisdiction, IModule, ISoul, ISoulProfile } from "../models";
 
@@ -14,8 +15,20 @@ import { IJurisdiction, IModule, ISoul, ISoulProfile } from "../models";
         negative: 20 ,
         upvotes: 2451 ,
         downvotes: 20 ,
+    }, {
+        name: "Fabo Liebs" ,
+        address: "0xBA8E0D813D3F5Fb36F7aD1946740b08310Cc58C8",
+        img: pic2,
+        totalAum: 10000 ,
+        members: 2451 ,
+        diversity: 24000 ,
+        cases: 200 ,
+        positive: 180 ,
+        negative: 20 ,
+        upvotes: 2451 ,
+        downvotes: 20 ,
     }];
-    for(let i = 1; i <= 2; i++) {
+    for(let i = 1; i <= 233; i++) {
         soulsExample.push({
             name: "Zero Corruption " + i,
             address: "0xc331A4fd3bC7b7B14159C8976276f75BCEAe054a",

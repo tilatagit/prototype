@@ -9,7 +9,7 @@ interface IDSlistProps {
 }
 
 export default function DashboardSoulsList({ soulsList, page }: IDSlistProps) {
-  const pageList = soulsList.slice( (page - 1) * 10, 11 + (page - 1) * 10);
+  const pageList = soulsList.slice( (page - 1) * 10, 10 + (page - 1) * 10);
   const list = pageList.map((soul, i) => {
     return (
       <div className="soulRow">
