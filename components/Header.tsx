@@ -11,7 +11,7 @@ interface IHeader {
   account: string[];
 }
 
-export default function Header({ setAccount, setProvider }: IHeader) {
+export default function Header() {
   const context = useContext(AppContext)
   const [modalActive, setModalActive] = useState(false);
   const accountInfo = (address: string) => {
@@ -50,7 +50,7 @@ export default function Header({ setAccount, setProvider }: IHeader) {
             placeholder="Search..."
           />
         </form>
-        {!context.account ? (
+        {!context.account[0] ? (
           <button
             className="connectButton"
             onClick={() => setModalActive(true)}

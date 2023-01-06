@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 import { useAccount } from "wagmi";
 import AppContext from "../AppContexst";
-import { connectMetaMask, provider } from "./metamask";
+import { connectMetaMask } from "./metamask";
 import WalletConnect from "./WalletConnect";
 import { Web3Button } from "@web3modal/react";
 import { Web3Modal } from "@web3modal/react";
@@ -21,8 +21,8 @@ export default function Modal({ active, setActive }: IModalProps) {
 
 
   useEffect(() => {
-    if (isConnected) {
-      context.setAccount([address]);
+    if (isConnected && address) {
+      context.setAccount([address.toString()]);
     }
   }, [isOpen, active]);
 

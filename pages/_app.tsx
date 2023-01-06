@@ -20,7 +20,7 @@ import { Web3Modal } from '@web3modal/react'
 
 export default function App({ Component, pageProps }: AppProps) {
   const [provider, setProvider] = useState({});
-  const [account, setAccount] = useState();
+  const [account, setAccount] = useState([]);
 
   return (
     <AppContext.Provider value={{provider, setProvider, account, setAccount}}>

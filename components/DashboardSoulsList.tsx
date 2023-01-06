@@ -12,7 +12,7 @@ export default function DashboardSoulsList({ soulsList, page }: IDSlistProps) {
   const pageList = soulsList.slice( (page - 1) * 10, 10 + (page - 1) * 10);
   const list = pageList.map((soul, i) => {
     return (
-      <div className="soulRow">
+      <div className="soulRow" key={i}>
         <div className="col-1">{(page - 1) * 10 + i + 1}</div>
         <div className="col-2 soul-info">
           <Image src={soul.img} alt="" width={50} height={46} />

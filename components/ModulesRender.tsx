@@ -5,10 +5,10 @@ interface IModulesListProps {
 }
 
 export default function ModulesRender({modulesList}: IModulesListProps) {
-    const modules = modulesList.map((module) => {
+    const modules = modulesList.map((module, i) => {
         return (
             
-            <div className="module">
+            <div className="module" key={i}>
                 <div className='module-icon ' id={"color-" + Math.floor(Math.random() * 5).toString() }>{module.name[0]}</div>
                 <h3>{module.name}</h3>
                 <p>{module.amountProjects} projects</p>

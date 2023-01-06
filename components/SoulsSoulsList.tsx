@@ -10,7 +10,7 @@ export default function SoulsSoulsList({ soulsList, page }: ISSlistProps) {
   const pageList = soulsList.slice( (page - 1) * 10, 10 + (page - 1) * 10);
   const list = pageList.map((soul, i) => {
     return (
-      <div className="souls-souls-row">
+      <div className="souls-souls-row" key={i}>
         <div className="souls-col-1 soul-info">
           <Image src={soul.img} alt="" width={50} height={46} />
           <div className="name-addr">
